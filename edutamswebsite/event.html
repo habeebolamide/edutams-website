@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <!-- Brand -->
+            <a href="#"><img class="pl-5 navbar-logo" src="assets/img/tams_logo.png" width="90%" alt=""></a>
+    
+            <!-- Toggler/collapsibe Button -->
+            <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Links -->
+            <div class="collapse navbar-collapse in " id="collapsibleNavbar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link pr-4" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pr-4" href="event.html">Events</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="ourproduct.html" data-bs-toggle="dropdown"> Our Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-dark" href="edutamspublic.html"> EduTAMS Public</a></li>
+                            <li><a class="dropdown-item text-dark" href="#"> EduTAMS Private </a></li>
+                            <li><a class="dropdown-item text-dark" href="edutamspro.html"> EduTAMS PRO </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pr-4" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registration.html" class="nav-link nav-btn">Get-Onboard</a>
+                    </li>
+    
+    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="our-events py-3">
+        <div class="section-head">
+            <h1 class="text-white"><span>EduTAMS</span> Events </h1>
+        </div>
+    </section>
+    <section class="event-overveiw py-5">   
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-head">
+
+                        <h1 class="text-left">Current Events Overveiw</h1>
+                    </div>
+                    <p>
+                        REFRESHER TRAIING FOR HoS and SPAs
+                    </p>
+                    <p>
+                        This virtual workshop is meant to intimate Head of Schools and the School Portal Administrators with the new updates on
+                        the OGSERA platform.
+                    </p>
+                    <div class="timer pt-4 mb-4">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <p><span style="color:gray;">Start</span><br>10:00PM</p>
+                                    <div id="clockdiv">
+                                        <div class="section-head pt-2 pb-2">
+                                            <h1 class="days" id="day"></h1>
+                                        </div>
+                                    </div>
+                                    <p class="text-center">Days</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p><span style="color:gray;">Tus</span><br>26 Jul 22</p>
+                                    <div id="clockdiv">
+                                        <div class="section-head pt-2 pb-2">
+                                            <h1 class="hours" id="hour"></h1>
+                                        </div>
+                                    </div>
+                                    <p class="text-center">Hours</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p><span style="color:gray;">End</span><br>01:00AM</p>
+                                    <div id="clockdiv">
+                                        <div class="section-head pt-2 pb-2">
+                                            <h1 class="minutes" id="minute"></h1>
+                                        </div>
+                                    </div>
+                                    <p class="text-center">Minutes</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p><span style="color:gray;">End</span><br>01:00AM</p>
+                                    <div id="clockdiv">
+                                        <div class="section-head pt-2 pb-2">
+                                            <h1 class="seconds" id="second"></h1>
+                                        </div>
+                                    </div>
+                                    <p class="text-center">Seconds</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p style="font-size: 14px;">
+                                        You can join us live via our YouTube channel.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn ticket-btn">Free Tickets</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="img-fluid">
+                        <img src="assets/img/Events/event.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="event py-5">
+        <div class="container">
+            <div class="section-head">
+                <h1 class="text-white">Events</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="img-fluid">
+                        <img src="assets/img/Events/event.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <p class="mt-5">This virtual workshop is meant to intimate Head of Schools and the School Portal
+                        Administrators with the new updates on the OGSERA platform. </p>
+                    <p class="mt-2">This is a recurring workshop.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter-area mb-5">
+        <div class="container">
+            <div class="newsletter-div pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-6">
+                            <div class="words">
+                                <h3>
+                                    Subscribe to Our Newsletter
+                                </h3>
+                                <span class="pt-1">
+                                    Be the first to receive our update about new strides and events.
+                                </span>
+                                <div class="input-group mt-2">
+                                    <input type="email" name="" id="" class="form-control">
+                                    <div class="input-append">
+                                        <button class="btn">Suscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="news-img d-none d-md-block">
+                                <img src="assets/img/Dashboard/Newletter.png" alt="" width="80%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-area pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 mt-4">
+                        <div>
+                            <img class="logo" src="assets/img/tams_logo.png" alt="">
+                        </div>
+                        <div class="first-content  pl-3">
+                            <p>
+                                An education technology solution provider with
+                                extensive knowledge in the design, development and deployment of scalable and integrated
+                                Education
+                                Management Information System (EMIS).
+                            </p>
+                            <h5>
+                                Follow Us
+                            </h5>
+                            <div class="social-medias">
+                                <ul>
+                                    <li>
+                                        <i class='bx bxl-twitter bx-border-circle twitter'></i>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxl-instagram bx-border-circle instagram'></i>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxl-facebook bx-border-circle facebook'></i>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxl-linkedin bx-border-circle linkedin'></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <div class="quick-links ">
+                            <div>
+                                <ul class="quick-links-list">
+                                    <h5 class="pl-3">Quick Links</h5>
+                                    <li>
+                                        <a class="nav-link" style="color: white !important;" href="about.html">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" style="color: white !important;" href="event.html">Events</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" style="color: white !important;" href="contact.html">Our
+                                            Products</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" style="color: white !important;" href="contact.html">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" style="color: white !important;" href="contact.html">Get
+                                            Onboard</a>
+    
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <div class="quick-links">
+                            <div>
+                                <ul class="sales">
+                                    <h5 class="pl-3">Get in Touch</h5>
+                                    <div class="pl-4">
+                                        <p class="pt-q">Sales</p>
+                                        <li>
+                                            <i class='bx bxl-gmail
+                        bx-border-circle mail mr-2'></i>sales@edutams.net
+                                        </li>
+                                        <p class="pt-2">Support</p>
+                                        <li>
+                                            <i class='bx bxl-gmail
+                        bx-border-circle mail mr-2'></i>support@edutams.net
+                                        </li>
+                                        <p class="pt-2">Info</p>
+                                        <li>
+                                            <i class='bx bxl-gmail
+                        bx-border-circle mail mr-2'></i>info@edutams.net
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <div class="quick-links">
+                            <div>
+                                <ul class="sales">
+                                    <h5 class="pl-3">Location</h5>
+                                    <div class="pl-4 address">
+    
+                                        <li>
+                                            <p>
+                                                10, Prince C.O Adenubi Street, Behind Fowobi Filling Station Igbomoku
+                                                Quarters, Ijebu Ife,
+                                                Ogun State
+                                            </p>
+    
+                                        </li>
+                                        <li>
+                                            <p class="pt-3">
+                                                +234 (0) 701 112 3736
+                                                <br>
+                                                +234 (0) 805 868 4616
+    
+                                            </p>
+    
+                                        </li>
+    
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-4 copyright">
+                    <div class="col-md-6 col-6">
+                        <div>
+                            <p class="text-white" style="color: white;">
+                                Copyright ©2022
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6">
+                        <div>
+                            <p class="float-right text-white">
+                                All rights reserved | Crownbirth Ltd
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script>
+        /* Enter here your End date in this format! */
+            var endDate = "sep 9, 2022 00:00:00";
+
+            /* ***** Do not change this code below. ***** */
+            var deadline = new Date(endDate).getTime();
+
+            var x = setInterval(function () {
+                var now = new Date().getTime();
+                var t = deadline - now;
+                var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((t % (1000 * 60)) / 1000);
+                document.getElementById("day").innerHTML = days;
+                document.getElementById("hour").innerHTML = hours;
+                document.getElementById("minute").innerHTML = minutes;
+                document.getElementById("second").innerHTML = seconds;
+
+                /* Output the End date. (Only for Demo) */
+                document.getElementById("deadline").innerHTML = endDate;
+
+                if (t < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "COUNTDOWN FINISHED";
+                    document.getElementById("day").innerHTML = "0";
+                    document.getElementById("hour").innerHTML = "0";
+                    document.getElementById("minute").innerHTML = "0";
+                    document.getElementById("second").innerHTML = "0";
+                }
+            }, 1000);
+    </script>
+</body>
+
+</html>

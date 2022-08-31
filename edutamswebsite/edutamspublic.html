@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <link rel="stylesheet" href="assets/css/style.css">
+    
+    
+    
+    
+    </head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <!-- Brand -->
+            <a href="#"><img class="pl-5 navbar-logo" src="assets/img/tams_logo.png" width="90%" alt=""></a>
+    
+            <!-- Toggler/collapsibe Button -->
+            <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Links -->
+            <div class="collapse navbar-collapse in " id="collapsibleNavbar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link pr-4" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pr-4" href="event.html">Events</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="ourproduct.html" data-bs-toggle="dropdown"> Our Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-dark" href="edutamspublic.html"> EduTAMS Public</a></li>
+                            <li><a class="dropdown-item text-dark" href="#"> EduTAMS Private </a></li>
+                            <li><a class="dropdown-item text-dark" href="edutamspro.html"> EduTAMS PRO </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pr-4" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registration.html" class="nav-link nav-btn">Get-Onboard</a>
+                    </li>
+    
+    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="our-product-area pb-5">
+        <div class="text-center">
+            <h1 class="font-weight-bolder ">EduTAMS Products</h1>
+        </div>
+    </section>
+    <section class="products">
+        <div class="container">
+            <div>
+                <div class="card mt-md-5">
+                    <div class="card-body pt-0">
+                        <div class="container">
+                            <ul class="nav nav-pills mb-3 pt-5 justify-content-center theTabs" id="pills-tab"
+                                role="tablist">
+                                <li class="nav-item mb-2" role="presentation">
+                                    <button class="nav-link firstTab active " id="pills-home-tab" data-toggle="pill"
+                                        data-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">EduTAMS Private</button>
+                                </li>
+                                <li class="nav-item mb-2 ml-4" role="presentation">
+                                    <button class="nav-link firstTab" id="pills-home-tab" data-toggle="pill"
+                                        data-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">EduTAMS Public</button>
+                                </li>
+                                <li class="nav-item mb-2 ml-4" role="presentation">
+                                    <button class="nav-link firstTab" id="pills-home-tab" data-toggle="pill" data-target="#pills-profile" type="button"
+                                        role="tab" aria-controls="pills-home" aria-selected="true">EduTAMS-PRO</button>
+                                </li>
+
+                            </ul>
+                            <hr class="special-hr">
+
+                            <div>
+                                <div class="tab-content pl-5" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab">
+                                        <h2 class="pl-3">EduTAMS BASIC</h2>
+                                        <p class="basic text-dark pl-3">
+                                            EduTAMS Basic is a product of extensive research. We identified some of the
+                                            challenges to the
+                                            use
+                                            of technology in our Schools.
+                                            Such as infrastructure requirements; which limits the adoption rate of tech
+                                            due
+                                            to its high cost
+                                            of
+                                            setup, and we developed a cloud based solution that is
+                                            customized for each school.
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade show" id="pills-profile" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab">
+                                        <h2 class="pl-3">EduTAMS PRO</h2>
+                                        <p class="basic text-dark pl-3">
+                                            EduTAMS Pro is a product of extensive research. Weidentified some of the
+                                            challenges to the use
+                                            of technology in our Schools.
+                                            Such as infrastructure requirements; which limits the adoption rate of tech
+                                            due
+                                            to its high cost
+                                            of
+                                            setup, and we developed a cloud based solution that is
+                                            customized for each school.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="moest py-5">
+        <div class="container text-center">
+            <h4>MOEST</h4>
+            <p>Ministry of Education, Science and Technology is responsible for the development of sustainable and accessible <br> educational services in Ogun State. We are a major contributor to the advancement of this pursuit and our proof <br> is the Ogun State Education Revitalization Agenda Initiative.</p>
+            <a href="https://ogsera.ogunstate.gov.ng" class="btn ogsera-btn pt-2 pb-2 mt-3 text-white">Go to OGSERA</a>
+        </div>
+    </section>
+    <section class="stakeholder py-5">
+        <div class="container">
+            <h4 class="text-center">Stakeholders</h4>
+            <p class="text-center mb-5">We understand that school management is faced with challenges and varied expectations of the stakeholders. We identified the diverse needs of the education stakeholders and designed our solution to deliver on target value.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3 ministry mb-5 mb-md-0">
+                        <div class="img">
+                            <img src="assets/img/Vectors/zeo.png" class="ml-2 pb-4" alt="" width="80%">
+                        </div>
+                        <h4 class="text-center">Ministry </h4>
+                        <p>The Ministry Staff are the Super Administrators on the OGSERA platform. They keep track of the activities of schools in every zones across the State without limitation. </p>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3 zeo mb-5 mb-md-0">
+                        <div class="img">
+                            <img src="assets/img/Vectors/zeo.png" class="ml-2 pb-4" alt="" width="80%">
+                        </div>
+                        <h4 class="text-center">Zeo</h4>
+                        <p>The Zonal Education Officers acts as representatives of the Ministry in their assigned zones and ensures that school activities are in order.</p>
+                    </div>
+                    
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3 ministry">
+                        <div class="img">
+                            <img src="assets/img/Vectors/zeo.png" class="ml-2 pb-4" alt="" width="80%">
+                        </div>
+                        <h4 class="text-center">SPA</h4>
+                        <p>SPA is an additional role of a teacher in a school. He/she is responsible for the profiling of teachers students and parents of that school into the OGSERA platform.</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3 ministry mb-5 mb-md-0">
+                        <div class="img">
+                            <img src="assets/img/Vectors/zeo.png" class="ml-2 pb-4" alt="" width="80%">
+                        </div>
+                        <h4 class="text-center"><strong>TEACHER</strong></h4>
+                        <p>The teacher in a school can assigned to teach a subject or multiple subjects and also handle a class as the class teacher.  </p>
+                    </div>
+                    <div class="col-md-1"></div>
+                    
+                    <div class="col-md-3 zeo mb-5 mb-md-0">
+                        <div class="img">
+                            <img src="assets/img/Vectors/zeo.png" class="ml-2 pb-4" alt="" width="80%">
+                        </div>
+                        <h4 class="text-center">STUDENT</h4>
+                        <p>The students can access their dossier on the OGSERA platform. This can be done through any internet enabled device.</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                    
+    
+                    <div class="col-md-3 ministry">
+                        <div class="img">
+                            <img src="assets/img/Vectors/zeo.png" class="ml-2 pb-4" alt="" width="80%">
+                        </div>
+                        <h4 class="text-center"><strong>PARENT</strong></h4>
+                        <p>parents can get access to the performance of their wards via the platform. This can be done through any internet enabled device.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bece py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md-6">
+                    <img src="" alt="student">
+                </div>
+                <div class="col-md-6">
+                    <h4><b>Register BECE Exams With Easy On EduTAMS</b></h4>
+                    <p class="pt-4">Registration for the Basic Education Certification Examination has been digitized...</p>
+                    <button class="btn mt-2">Get-Onboard</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter-area mb-5">
+        <div class="container">
+            <div class="newsletter-div pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-6">
+                            <div class="words">
+                                <h3>
+                                    Subscribe to Our Newsletter
+                                </h3>
+                                <span class="pt-1">
+                                    Be the first to receive our update about new strides and events.
+                                </span>
+                                <div class="input-group mt-2">
+                                    <input type="email" name="" id="" class="form-control">
+                                    <div class="input-append">
+                                        <button class="btn">Suscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="news-img d-none d-md-block">
+                                <img src="assets/img/Dashboard/Newletter.png" alt="" width="80%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-area pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 mt-4">
+                        <div>
+                            <img class="logo" src="assets/img/tams_logo.png" alt="">
+                        </div>
+                        <div class="first-content  pl-3">
+                            <p>
+                                An education technology solution provider with
+                                extensive knowledge in the design, development and deployment of scalable and integrated
+                                Education
+                                Management Information System (EMIS).
+                            </p>
+                            <h5>
+                                Follow Us
+                            </h5>
+                            <div class="social-medias">
+                                <ul>
+                                    <li>
+                                        <i class='bx bxl-twitter bx-border-circle twitter'></i>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxl-instagram bx-border-circle instagram'></i>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxl-facebook bx-border-circle facebook'></i>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxl-linkedin bx-border-circle linkedin'></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <div class="quick-links ">
+                            <div>
+                                <ul class="quick-links-list">
+                                    <h5 class="pl-3">Quick Links</h5>
+                                    <li>
+                                        <a class="nav-link" style="color: white !important;" href="about.html">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" style="color: white !important;" href="event.html">Events</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" style="color: white !important;" href="contact.html">Our
+                                            Products</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" style="color: white !important;" href="contact.html">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" style="color: white !important;" href="contact.html">Get
+                                            Onboard</a>
+    
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <div class="quick-links">
+                            <div>
+                                <ul class="sales">
+                                    <h5 class="pl-3">Get in Touch</h5>
+                                    <div class="pl-4">
+                                        <p class="pt-q">Sales</p>
+                                        <li>
+                                            <i class='bx bxl-gmail
+                        bx-border-circle mail mr-2'></i>sales@edutams.net
+                                        </li>
+                                        <p class="pt-2">Support</p>
+                                        <li>
+                                            <i class='bx bxl-gmail
+                        bx-border-circle mail mr-2'></i>support@edutams.net
+                                        </li>
+                                        <p class="pt-2">Info</p>
+                                        <li>
+                                            <i class='bx bxl-gmail
+                        bx-border-circle mail mr-2'></i>info@edutams.net
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <div class="quick-links">
+                            <div>
+                                <ul class="sales">
+                                    <h5 class="pl-3">Location</h5>
+                                    <div class="pl-4 address">
+    
+                                        <li>
+                                            <p>
+                                                10, Prince C.O Adenubi Street, Behind Fowobi Filling Station Igbomoku
+                                                Quarters, Ijebu Ife,
+                                                Ogun State
+                                            </p>
+    
+                                        </li>
+                                        <li>
+                                            <p class="pt-3">
+                                                +234 (0) 701 112 3736
+                                                <br>
+                                                +234 (0) 805 868 4616
+    
+                                            </p>
+    
+                                        </li>
+    
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-4 copyright">
+                    <div class="col-md-6 col-6">
+                        <div>
+                            <p class="text-white" style="color: white;">
+                                Copyright ©2022
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6">
+                        <div>
+                            <p class="float-right text-white">
+                                All rights reserved | Crownbirth Ltd
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+        <script src="assets/js/index.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // make it as accordion for smaller screens
+            if (window.innerWidth > 992) {
+    
+              document.querySelectorAll('.navbar .nav-item').forEach(function (everyitem) {
+    
+                everyitem.addEventListener('mouseover', function (e) {
+    
+                  let el_link = this.querySelector('a[data-bs-toggle]');
+    
+                  if (el_link != null) {
+                    let nextEl = el_link.nextElementSibling;
+                    el_link.classList.add('show');
+                    nextEl.classList.add('show');
+                  }
+    
+                });
+                everyitem.addEventListener('mouseleave', function (e) {
+                  let el_link = this.querySelector('a[data-bs-toggle]');
+    
+                  if (el_link != null) {
+                    let nextEl = el_link.nextElementSibling;
+                    el_link.classList.remove('show');
+                    nextEl.classList.remove('show');
+                  }
+    
+    
+                })
+              });
+    
+            }
+            // end if innerWidth
+          });
+    // DOMContentLoaded  end
+      </script>
+</body>
+</html>
